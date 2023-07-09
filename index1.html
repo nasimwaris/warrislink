@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+   
+
+<body>
+       <div class="heding">
+           Welcome To Login Page
+       </div>
+     <div class="home">
+        <span onclick="myFunction()">&#9776;</span>
+        <ul id="menu" >
+           <li type="none"><a href="vbdv ">Home</a></li>
+           <br> 
+            <li type="none"><a href="vbdv ">Contect</a></li>  
+            <br>
+
+          <li type="none"> <a href="vbdv ">About</a></li>  
+          <br>
+         <li type="none">  <a href="vbdv ">Help</a></li>   
+            
+        </ul>
+   
+</div>
+
+
+    <div class="contain">
+      <div class="text">
+        <h1>Login</h1>
+        <input class="inp1" type="text" placeholder="user name" id="username">
+        <input class="inp2" type="password" placeholder="password" id="password">
+        <p>Forget Password</p>
+        <button onclick="login()">Login</button>
+        <p>Not a member?<a href="register.html"><samp>Register</samp></p></a>
+
+      </div>
+    </div>
+<script>
+    function myFunction(){
+             var x= document.getElementById("menu");
+             if(x.style.display == "block"){
+                x.style.display = "none";
+
+             }
+             else{
+                x.style.display = "block";
+             }
+    }
+     function login()
+     {
+    var uname=document.getElementById('username').value;
+    var pass=document.getElementById('password').value;
+    if(uname=="chandan" && pass=="1234")
+    {
+      location.assign("index.html");
+    }
+    else{
+      window.alert("loginfaild"); n
+    }
+     }
+     
+</script>
+</body>
+</html>
